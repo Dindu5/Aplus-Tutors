@@ -18,7 +18,12 @@ body {
   width: 100vw;
   padding: 50px 0;
 }
-
+#sign-in_parent {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .middle-container {
   width: 50%;
   margin-left: auto;

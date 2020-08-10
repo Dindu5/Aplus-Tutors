@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/sign-up.css" />
+    <link rel="stylesheet" href="../assets/css/queries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Page Preloader -->
+    <div class="loader">
+        <div class="w-25">
+            <img src="../assets/images/logo2.png" class="mx-auto" alt="">
+        </div>
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- End of Page Preloader -->
+    <!--HEADER / NAVIGATION -->
+
+    <header class="header">
+        <div class="main-nav">
+            <div class="logo"><img src="../assets/images/logo.png" alt=""></div>
+            <div class="navigation">
+                <div class="mid_nav mx-auto">
+                    <a href="../index.html" class="link">HOME</a>
+                    <a href="#" class="link ml-lg-4 ml-md-3 ml-sm-2 ml-0">SUBJECTS</a>
+                    <a href="#" class="link ml-lg-4 ml-md-3 ml-sm-2 ml-0">EXTRA CURRICULUM</a>
+                    <a href="#" class="link ml-lg-4 ml-md-3 ml-sm-2 ml-0">ABOUT US</a>
+                </div>
+                <div class="authentication pull-right">
+                    <a href="./sign-in.html" id="Sign_up">Login</a>
+                    <a href="./sign-up.html" id="login" class="ml-lg-4 ml-md-3 ml-sm-2 ml-0">Sign-Up</a>
+                </div>
+            </div>
+
+            <div class="menu-btn ml-auto">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Sign Up Content -->
+    <div class="parent">
+        <div class="middle-container" id="sign-in_parent">
+            <div class="form-container">
+                <h2 class="mb">Sign In</h2>
+                <form>
+                    <p class="grey mb">
+                        Login to your account!
+                    </p>
+
+                    <hr class="mb" />
+
+                    <input class="input" type="text" placeholder="Email" />
+                    <input class="input" type="text" placeholder="Password" />
+
+                    <input class="checkbox" type="checkbox" />
+                    <p class="grey mt mb inline-block">
+                        Stay signed in?
+                    </p>
+                    <button class="mt">Sign In</button>
+                </form>
+            </div>
+            <div class="text-container mt">
+                <p>Dont have an account? <a href="./sign-up.html">Sign-up here.</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="d-flex w-100 footer_top">
+            <div class="logo_area d-flex flex-column">
+                <div class="footer_logo mb-4">
+                    <img src="../assets/images/logo.png" alt="">
+                </div>
+                <div>
+                    <a href="" class="social_icons"><i class='bx bxl-facebook'></i></a>
+                    <a href="" class="social_icons mx-1"><i class='bx bxl-twitter'></i></a>
+                    <a href="" class="social_icons mx-1"><i class='bx bxl-instagram'></i></a>
+                    <a href="" class="social_icons"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between w-100 footer_content">
+                <div class="mb-2 d-flex flex-column">
+                    <h6>A+ Tutor</h6>
+                    <a href="">Careers</a>
+                </div>
+                <div class="mb-2 d-flex flex-column">
+                    <h6>More Info</h6>
+                    <a href="">Blog</a>
+                    <a href="">Research</a>
+                    <a href="">Curriculum</a>
+                </div>
+                <div class="mb-2 d-flex flex-column">
+                    <h6>Math Education</h6>
+                    <a href="">Membership</a>
+                    <a href="">Math Tutoring</a>
+                </div>
+                <div class="mb-2 d-flex flex-column">
+                    <h6>Support</h6>
+                    <a href="">Parents</a>
+                    <a href="">Teachers</a>
+                    <a href="">Students</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_end d-flex justify-content-end">
+            <a href="">Privacy Policy</a>
+            <a href="" class="ml-3">Terms and Condition</a>
+        </div>
+    </footer>
+</body>
+<script src="../assets/js/scripts.js"></script>
+
+</html>
