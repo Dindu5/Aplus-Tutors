@@ -281,7 +281,7 @@ footer {
 }
 
 @media screen and (max-width: 578px) {
-    .footer_top, .footer_end {
+    .main-nav, .footer_top, .footer_end {
         padding: 20px 20px;
     }
     .footer_content {
