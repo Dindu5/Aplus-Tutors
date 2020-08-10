@@ -7,8 +7,7 @@
 
 /* Small tablets to big tablets from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
-  html,
-  body {
+  .parent {
     font-size: 16px;
   }
 
@@ -19,8 +18,7 @@
 
 /* Small Phones to small tablets from 481px to 767px */
 @media only screen and (max-width: 767px) {
-  html,
-  body {
+  .parent {
     font-size: 14px;
   }
 
@@ -35,8 +33,7 @@
 
 /* Small Phones from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  html,
-  body {
+  .parent {
     font-size: 12px;
   }
 
