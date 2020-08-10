@@ -1,0 +1,302 @@
+/* ==================================================== */
+/* ====== Main Style Sheet for A+ Tutors website ====== */
+/* ==================================================== */
+@import url(./navigation.css);
+* {
+	margin: 0;
+	padding: 0;
+	color: var(--primary-color);
+	font-family: 'Poppins', sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.text-blue {
+    color: var(--secondary-color);
+}
+
+
+/* ================================================= */
+/* ======================= LANDING ================= */
+/* ================================================= */
+
+.landing {
+    padding: 10px 80px;
+}
+.first_area {
+    width: 32%;
+}
+.landing-text {
+	font-size: 2rem;
+    font-weight: 600;
+    width: 50%;
+    line-height: 3rem;
+    transform: translateY(11vw);
+}
+.landing p {
+    line-height: 2;
+    margin-top: 5vw;
+}
+.learn_button {
+    padding: 0.6rem 3.5rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+.learn_button:hover,
+.learn_button:active,
+.learn_button:focus {
+    background-color: #001325;
+    color: var(--white);
+    outline: none;
+}
+
+/* ------------ END OF LANDING STYLES ------------ */
+
+/* ================================================= */
+/* ================= ABOUT SECTION ================= */
+/* ================================================= */
+
+#about {
+    padding: 10px 80px;
+    padding-bottom: 4.5rem !important;
+}
+.title {
+	color: #001325;
+	font-weight: 600;
+}
+.about_description {
+    width: 60%;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+.desc {
+    padding-left: 3rem;
+}
+.desc p {
+    font-size: 1.1rem;
+}
+.about_list {
+    font-size: 1rem !important;
+    margin: 0;
+}
+.desc span img {
+    width: 1.4rem;
+    margin-right: 1rem;
+}
+
+/* ------------ END OF ABOUT SECTION ------------ */
+
+
+/* ================================================= */
+/* ============== GET STARTED SECTION ============== */
+/* ================================================= */
+.get_started {
+    padding: 40px 80px;
+    background-color: var(--background);
+}
+.get_started_row {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.get_started_card {
+	width: 100%;
+	padding: 1.2rem;
+	border-radius: 10px;
+    /* box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04); */
+    text-align: center;
+}
+.get_started_content h1 {
+    font-size: 4rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.get_started_content h1 i {
+    color: var(--secondary-color);
+}
+.get_started_card p {
+    line-height: 2rem;
+}
+
+/* ================================================= */
+/* ================= REVIEW SECTION ================= */
+/* ================================================= */
+#review {
+    background-color: var(--secondary-color);
+    padding:5rem 80px;
+}
+#review h2 {
+    color: var(--white);
+}
+.review_col {
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin: 0 0.8rem;
+}
+.review_paragraph {
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+    min-height: 18rem;
+}
+.review_img {
+    width: 10rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .first_area {
+        width: 60%;
+    }
+    .landing-text {
+        font-size: 1.8rem;
+        width: 60%;
+        transform: translateY(9vw);
+    }
+    .title, #review h2  {
+        font-size: 1.6rem;
+    }
+    .review_paragraph {
+        min-height: 22rem;
+    }
+    
+}
+
+@media screen and (max-width: 962px) {
+    .first_area {
+        width: 70%;
+    }
+    .landing-text {
+        font-size: 1.6rem;
+        width: 80%;
+        transform: translateY(8vw);
+    }
+    .landing p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    .title, #review h2 {
+        font-size: 1.4rem;
+    }
+    .about_description {
+        line-height: 1.8;
+    }
+    .desc {
+        padding-left: 0.1rem;
+    }
+    .get_started p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    #review {
+        padding: 3rem 60px;
+    }
+    .review_col {
+        padding: 0.5rem;
+        margin: 0.1rem;
+    }
+    .review_paragraph {
+        font-size: 0.9rem;
+        line-height: 1.8;
+        min-height: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.landing, .get_started {
+		padding: 40px 40px;
+    }
+    .main_landing {
+        flex-direction: column;
+    }
+    .landing-text {
+        font-size: 1.5rem;
+        width: 80%;
+        transform: translateY(0);
+        line-height: 1.7;
+        margin-top: 1.5rem;
+    }
+    .landing p {
+        margin-top: 0rem;
+        margin-bottom: 1.2rem;
+    }
+    .illustration {
+        margin-top: -8rem;
+        z-index: -1;
+    }
+	#about {
+		padding: 20px 40px;
+    }
+    .review_paragraph {
+        font-size: 0.9rem;
+        line-height: 1.8;
+        min-height: 18rem;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .main-nav, #about {
+        padding: 20px 20px;
+    }
+    .landing-text {
+        font-size: 1.3rem;
+        width: 100%;
+        line-height: 1.6;
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+    .first_area {
+        width: 100%;
+    }
+    .landing p {
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+        text-align: center;
+        
+    }
+    .title, #review h2 {
+        font-size: 1.2rem;
+    }
+    .learn_button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .illustration {
+        margin-top: 0.1rem;
+    }
+    .about_description {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .desc p {
+        font-size: 1rem;
+    }
+    .about_list {
+        font-size: 0.9rem;
+    }
+    .desc span img {
+        width: 1.2rem;
+        max-height: 1.5rem;
+    }
+    .review_col {
+        padding: 1.3rem;
+    }
+    .review_paragraph {
+        min-height: 13rem !important;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #review {
+        background-color: var(--secondary-color);
+        padding:5rem 40px;
+    }
+}
